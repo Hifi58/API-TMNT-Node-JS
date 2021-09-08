@@ -1,5 +1,7 @@
 const Character = require('../models/characterModel');
 
+const { getPostData } = require('../utils');
+
 // Appeler tous les personnages
 // @route GET /api/characters
 async function getCharacters(req, res){
@@ -35,19 +37,75 @@ async function getCharacter(req, res, id){
 // @route POST /api/characters
 async function createCharacter(req, res){
     try {
-        const character = {
-            name: 'Splinter',
-            filiation: 'Tortues',
-            type: 'Mutant'
-        }
+       const body = await getPostData(req);
 
-        const newCharacter = Character.createCharacter(character);
+        const { name, filiation, type } = JSON.parse(body);
 
-        res.writeHead(201, {'Content-Type': 'application/json'});
-        return res.end(JSON.stringify(newCharacter));
+       const character = {
+        name,
+        filiation,
+        type
+    }
+
+    const newCharacter = await Character.createCharacter(character);
+
+    res.writeHead(201, {'Content-Type': 'application/json'});
+    return res.end(JSON.stringify(newCharacter)); 
+
+        
 
     } catch (error) {
         console.log(error);
+    }
+}
+
+// Modifier un personnage
+// @route PUT /api/characters/:id
+async function updateCharacter(req, res, id){
+    try {
+        const character = await Character.findById(id)
+
+        if(!character){
+            res.writeHead(404, { 'Content-Type': 'application/json'});
+            res.end(JSON.stringify({ message : 'Character Not Found'}));
+        }else{
+             const body = await getPostData(req);
+
+        const { name, filiation, type } = JSON.parse(body);
+
+       const characterdata = {
+        name: name || character.name,
+        filiation: filiation || character.filiation,
+        type: type || character.type
+        }
+
+        const updCharacter = await Character.updateCharacter(id, characterdata);
+
+        res.writeHead(200, {'Content-Type': 'application/json'});
+        return res.end(JSON.stringify(updCharacter)); 
+        }
+
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+// Supprimer un personnage
+// @route DELETE /api/characters
+async function deleteCharacter(req, res, id){
+    try {
+        const character = await Character.findById(id);
+
+        if(!character){
+            res.writeHead(404, { 'Content-Type': 'application/json'});
+            res.end(JSON.stringify({ message : 'Character Not Found'})); 
+        }else{
+            await Character.removeCharacter(id)
+            res.writeHead(200, { 'Content-Type': 'application/json'});
+            res.end(JSON.stringify({message: `Character ${id} removed`}));
+        }    
+    }catch (error) {
+    console.log(error);
     }
 }
 
@@ -55,5 +113,7 @@ async function createCharacter(req, res){
 module.exports = {
     getCharacters,
     getCharacter,
-    createCharacter
+    createCharacter,
+    updateCharacter,
+    deleteCharacter
 }
