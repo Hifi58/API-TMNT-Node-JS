@@ -1,91 +1,128 @@
 [
-  { "id": "1", "name": "Léonardo", "filiation": "Tortues", "type": "Mutant" },
-  { "id": "2", "name": "Raphael", "filiation": "Tortues", "type": "Mutant" },
-  { "id": "3", "name": "Donatello", "filiation": "Tortues", "type": "Mutant" },
+  {
+    "id": "1",
+    "name": "Léonardo",
+    "filiation": "Tortues",
+    "type": "Mutant",
+    "bio": "Leonardo est, avec Donatello, le plus calme et le plus sage. Bien qu'il ne soit pas désigné explicitement comme le chef du groupe, c'est lui qui commande les Tortues en l'absence de Splinter."
+  },
+  {
+    "id": "2",
+    "name": "Raphael",
+    "filiation": "Tortues",
+    "type": "Mutant",
+    "bio": "Raphaël est la plus violente des quatre tortues, tendant souvent à se déchaîner, aussi bien dans le combat que lorsqu'il est poussé à bout de nerfs dans la vie courante. Il fait rarement de l'humour, excepté des commentaires sarcastiques de temps à autre. Il partage une relation fraternelle particulièrement forte avec Michelangelo, qu'il considère comme son meilleur partenaire de bataille."
+  },
+  {
+    "id": "3",
+    "name": "Donatello",
+    "filiation": "Tortues",
+    "type": "Mutant",
+    "bio": " Donatello est initialement seulement présenté comme la plus calme des Tortues avec Leonardo, et, tandis que par la suite il n'y a pas vraiment eu de structure hiérarchique entre les Tortues, dans les premières histoires il est présenté comme le second de Leonardo et de Splinter. Dans la première histoire du comic, c'est lui qui pousse Shredder du haut de l'immeuble où ils se battaient, sauvant ainsi ses frères et lui de la grenade tenue par leur ennemi."
+  },
   {
     "id": "4",
     "name": "Michelangelo",
     "filiation": "Tortues",
-    "type": "Mutant"
+    "type": "Mutant",
+    "bio": "Michelangelo est la tortue ninja la plus détendue et la moins sérieuse. Alors que ses frères réfléchissent souvent sur leur condition de mutant qui les prive de toute possibilité de s'intégrer, « Mikey ou Mike », comme il est appelé, ne se pose pas autant de soucis, et préfère passer plus de temps à s'amuser, que ce soit en faisant du skate-board dans les égouts, en regardant la télévision, en jouant aux jeux vidéo ou en mangeant de la pizza. Ses plaisanteries agacent par moment ses frères, et il est souvent utilisé comme l'élément comique majeur de la série."
   },
-  { "id": "5", "name": "Splinter", "filiation": "Tortues", "type": "Mutant" },
+  {
+    "id": "5",
+    "name": "Splinter",
+    "filiation": "Tortues",
+    "type": "Mutant",
+    "bio": " Un jour, Splinter voit une capsule de produits chimiques s'échapper d'un camion. La capsule frappe en plein visage un homme qui vient juste d'empêcher un aveugle de se faire écraser par le camion (référence au super-héros Daredevil). En retombant, la capsule entre en collision avec l'aquarium d'un jeune garçon contenant quatre bébés tortues. La capsule est fêlée et l’aquarium brisé, les tortues tombent dans les égouts, où Splinter les recueille, s'exposant lui-même à la substance chimique."
+  },
   {
     "id": "6",
     "name": "April O'Neil",
     "filiation": "Tortues",
-    "type": "Humain"
+    "type": "Humain",
+    "bio": "April O'Neil était à l'origine l'assistante de Baxter Stockman, un scientifique renommé. Elle aida à concevoir les Dératiseurs, des petits robots tueurs de rats fonctionnant sur un programme d'intelligence artificielle collective, destinés à résoudre les problèmes d'invasions de rats dans les égouts de Manhattan. Elle devient la plus grande alliées des tortues par la suite"
   },
   {
     "id": "7",
     "name": "Casey Jones",
     "filiation": "Tortues",
-    "type": "Humain"
+    "type": "Humain",
+    "bio": "Casey Jones est un héros « amateur », un ancien « loser » qui cherche à se racheter en faisant régner l'ordre à sa manière. Dans ce but, il patrouille dans les rues la nuit, le visage dissimulé par un masque de hockey et armé de différents instruments de sport, et agresse les criminels."
   },
   {
     "id": "8",
     "name": "Shredder",
     "filiation": "Foot",
-    "type": "Humain"
+    "type": "Humain",
+    "bio": "lorem ipsum"
   },
   {
     "id": "9",
     "name": "Krang",
     "filiation": "Foot",
-    "type": "Extra-terrestre"
+    "type": "Extra-terrestre",
+    "bio": "lorem ipsum"
   },
   {
     "id": "10",
-    "name": "Krang",
-    "filiation": "Foot",
-    "type": "Extra-terrestre"
+    "name": "Jennika",
+    "filiation": "Tortues",
+    "type": "Mutant",
+    "bio": "lorem ipsum"
   },
   {
     "id": "11",
     "name": "Karai",
     "filiation": "Foot",
-    "type": "Humain"
-},
-{
+    "type": "Humain",
+    "bio": "lorem ipsum"
+  },
+  {
     "id": "12",
     "name": "Hamato Yoshi",
     "filiation": "Foot",
-    "type": "Humain"
-},
-{
+    "type": "Humain",
+    "bio": "lorem ipsum"
+  },
+  {
     "id": "13",
     "name": "Leatherhead",
     "filiation": "Inconnue",
-    "type": "Mutant"
-},
-{
+    "type": "Mutant",
+    "bio": "lorem ipsum"
+  },
+  {
     "id": "14",
     "name": "Roi des rats",
     "filiation": "Méchants",
-    "type": "Mutant"
-},
-{
+    "type": "Mutant",
+    "bio": "lorem ipsum"
+  },
+  {
     "id": "15",
     "name": "Baxter Stockman",
     "filiation": "Foot",
-    "type": "Humain"
-},
-{
+    "type": "Humain",
+    "bio": "lorem ipsum"
+  },
+  {
     "id": "16",
     "name": "Bebop",
     "filiation": "Foot",
-    "type": "Mutant"
-},
-{
+    "type": "Mutant",
+    "bio": "lorem ipsum"
+  },
+  {
     "id": "17",
     "name": "Venus de Milo",
     "filiation": "Tortues",
-    "type": "Mutant"
-},
-{
+    "type": "Mutant",
+    "bio": "lorem ipsum"
+  },
+  {
     "id": "18",
     "name": "Rocksteady",
     "filiation": "Foot",
-    "type": "Mutant"
-}
-
+    "type": "Mutant",
+    "bio": "lorem ipsum"
+  }
 ]
